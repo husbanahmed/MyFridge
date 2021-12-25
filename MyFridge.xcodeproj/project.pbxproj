@@ -13,9 +13,12 @@
 		EF5202B6276B23420078C570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5202B4276B23420078C570 /* Main.storyboard */; };
 		EF5202B8276B23440078C570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5202B7276B23440078C570 /* Assets.xcassets */; };
 		EF5202BB276B23440078C570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5202B9276B23440078C570 /* LaunchScreen.storyboard */; };
+		F457ED1FD3159859522C0F68 /* Pods_MyFridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2C19A24B7F32231D6E86AC /* Pods_MyFridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270A021CA6BE6EC074DDC2F4 /* Pods-MyFridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridge.debug.xcconfig"; path = "Target Support Files/Pods-MyFridge/Pods-MyFridge.debug.xcconfig"; sourceTree = "<group>"; };
+		A647C21B23196F13AE38B643 /* Pods-MyFridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridge.release.xcconfig"; path = "Target Support Files/Pods-MyFridge/Pods-MyFridge.release.xcconfig"; sourceTree = "<group>"; };
 		EF5202AB276B23420078C570 /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5202AE276B23420078C570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5202B0276B23420078C570 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EF5202B7276B23440078C570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5202BA276B23440078C570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5202BC276B23440078C570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2C19A24B7F32231D6E86AC /* Pods_MyFridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F457ED1FD3159859522C0F68 /* Pods_MyFridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D60A5E80DB30650396AD141 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				270A021CA6BE6EC074DDC2F4 /* Pods-MyFridge.debug.xcconfig */,
+				A647C21B23196F13AE38B643 /* Pods-MyFridge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		251ECECAB01FDB11A29754E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2C19A24B7F32231D6E86AC /* Pods_MyFridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF5202A2276B23420078C570 = {
 			isa = PBXGroup;
 			children = (
 				EF5202AD276B23420078C570 /* MyFridge */,
 				EF5202AC276B23420078C570 /* Products */,
+				1D60A5E80DB30650396AD141 /* Pods */,
+				251ECECAB01FDB11A29754E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF5202BF276B23440078C570 /* Build configuration list for PBXNativeTarget "MyFridge" */;
 			buildPhases = (
+				5303187B2C391AFC15449BD5 /* [CP] Check Pods Manifest.lock */,
 				EF5202A7276B23420078C570 /* Sources */,
 				EF5202A8276B23420078C570 /* Frameworks */,
 				EF5202A9276B23420078C570 /* Resources */,
+				D33B06C0BA3CB04C1FE5D6A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5303187B2C391AFC15449BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33B06C0BA3CB04C1FE5D6A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFridge/Pods-MyFridge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFridge/Pods-MyFridge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFridge/Pods-MyFridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF5202A7276B23420078C570 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EF5202C0276B23440078C570 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270A021CA6BE6EC074DDC2F4 /* Pods-MyFridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EF5202C1276B23440078C570 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A647C21B23196F13AE38B643 /* Pods-MyFridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
